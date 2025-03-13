@@ -1,26 +1,19 @@
 project:
   type: book
-
 book:
-  title: "quarto-live-book"
-  author: "PDRH"
-  date: "3/1/2025"
+  title: quarto-live-book
+  author: PDRH
+  date: 3/1/2025
   chapters:
-    - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-
+  - index.qmd
+  - intro.qmd
+  - summary.qmd
+  - functions.qmd
+  - references.qmd
 bibliography: references.bib
-
-format: live-html
-webr:
-  packages:
-  - tidyverse
-  - palmerpenguins
-  - ggplot2
-
+format:
+  html:
+    css: include/webex.css
+    include-after-body: include/webex.js
 engine: knitr
 editor: visual
-
-
